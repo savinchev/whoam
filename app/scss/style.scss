@@ -56,6 +56,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 50px;
     &__inner{
         max-width: 600px;
         text-align: center;
@@ -102,8 +103,179 @@
 }
     // end course
 
+    // start school
+.school{
+    margin-bottom: 65px;
+    &__title{
+        margin-bottom: 60px;
+        &-shadow{
+            font-size: 70px;
+            line-height: 70px;
+        }
+    }
+    &__item{
+        margin-bottom: 20px;
+        background-color: #fff;
+        padding: 110px 120px 40px;
+        border-radius: 30px;
+        box-shadow: 0px 6px 17px 3px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            background-color: $yellow;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img{
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &-title{
+            font-size: 16px;
+            @include f500;
+        }
+        &-text{
+            @include f300;
+        }
+    }
+}
+    // end school
+    // start studentresults
+.studentresults{
+    margin-bottom: 70px;
+    &__inner{
+        border-radius: 60px;
+        background-color: #fff;
+        box-shadow: 0px 6px 17px 3px rgba(0, 0, 0, 0.08);
+        padding: 80px 0;
+        &-title{
+            margin-bottom: 60px;
+        }
+    }
+    &__item{
+        text-align: center;
+        &-avatar{
+            margin-bottom: 40px;
+            img{
+                margin: 0 auto;
+            }
+        }
+        .slick-slide img{
+            margin: 0 auto;
+        }
+        &-title{
+            font-size: 20px;
+            line-height: 20px;
+            @include f700;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            &::after{
+                background-image: url(../images/titleline.png);
+                width: 46px;
+                height: 4px;
+                bottom: -10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &-text{
+            max-width: 865px;
+            padding: 0 50px;
+            margin: 0 auto 25px;
+            font-style: italic;
+            position: relative;
+            &::before,
+            &::after{
+               content: "";
+               position: absolute;
+               background-image: url(../images/quoteup.png);
+               width: 22px;
+               height: 17px;
+               left: 0;
+               top: -8px;
+            }
+            &::after{
+                background-image: url(../images/quotedown.png);
+                left: auto;
+                top: auto;
+                right: 0;
+                bottom: -8px;
+            }
+        }
+        &-social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 18px;
+            a{
+                font-size: 16px;
+                @include f300;
+                color: $text;
+                margin-left: 8px;
+            }
+        }
+        &-btn{
+            max-width: 280px;
+            width: 100%;
+            padding: 18px 10px 16px 30px;
+            border-radius: 20px;
+            background-color: $green;
+            color: #fff;
+            @include f500;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                background-image: url(../images/playbutton.png);
+                width: 22px;
+                height: 22px;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+button.slick-arrow.slick-prev,
+button.slick-arrow.slick-next{
+    position: absolute;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+button.slick-arrow.slick-prev{
+    left: 50px;
+    z-index: 1;
+}
+button.slick-arrow.slick-next{
+    right: 50px;
+}
+    // end studentresults
+
+
+
+
+
     // start footer
 .footer{
+    margin-top: 300px;
     min-height: 260px;
     background-repeat: no-repeat;
     background-size: cover;
