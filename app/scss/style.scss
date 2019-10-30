@@ -122,8 +122,7 @@
         text-align: center;
         position: relative;
         overflow: hidden;
-        &::before{
-            content: "";
+        &-images{
             position: absolute;
             width: 190px;
             height: 190px;
@@ -132,12 +131,33 @@
             top: 0;
             left: 50%;
             transform: translate(-50%, -50%);
-        }
-        img{
-            position: absolute;
-            top: 15px;
-            left: 50%;
-            transform: translateX(-50%);
+            .item-images__inner{
+                position: relative;
+                width: 190px;
+                height: 190px;
+                &::before,
+                &::after{
+                    content:"";
+                    position: absolute;
+                    background-image: url(../images/circlethin.svg);
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 184px;
+                    height: 184px;
+                }
+                &::after{
+                    background-image: url(../images/circlebold.svg);
+                    width: 170px;
+                    height: 170px;
+                }
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, 15px);
+                }
+            }
         }
         &-title{
             font-size: 16px;
@@ -268,6 +288,390 @@ button.slick-arrow.slick-next{
     right: 50px;
 }
     // end studentresults
+    // start forwhom
+.forwhom{
+    margin-bottom: 40px;
+    &__title{
+        margin-bottom: 30px;
+        &-shadow{
+            font-size: 321px;
+            line-height: 321px;
+        }
+        .titleshadow{
+            top: -130%;
+        }
+    }
+    &__text{
+        margin-bottom: 45px;
+        text-align: center;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.forwhom__item{
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    &-images{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        position: relative;
+        &::before,
+        &::after{
+            content:"";
+            position: absolute;
+            background-image: url(../images/circlethin.svg);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 184px;
+            height: 184px;
+        }
+        &::after{
+            background-image: url(../images/circlebold.svg);
+            width: 170px;
+            height: 170px;
+        }
+    }
+    &-title{
+        font-size: 18px;
+        line-height: 20px;
+        @include f700;
+        text-transform: uppercase;
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+    &-text{
+
+    }
+}
+    // end for whom
+    // start profession
+.profession{
+    padding: 80px 0 90px;
+    min-height: 604px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    &__title{
+        margin-bottom: 60px;
+        &-shadow{
+            font-size: 110px;
+            line-height: 110px;
+        }
+        .titleshadow{
+            top: -40%;
+            z-index: 0;
+        }
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.profession__item{
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    &-images{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        position: relative;
+        &::before,
+        &::after{
+            content:"";
+            position: absolute;
+            background-image: url(../images/circlethin.svg);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 184px;
+            height: 184px;
+        }
+        &::after{
+            background-image: url(../images/circlebold.svg);
+            width: 170px;
+            height: 170px;
+        }
+    }
+    &-title{
+        font-size: 18px;
+        line-height: 20px;
+        @include f700;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &-text{
+        line-height: 16px;
+        font-style: italic;
+    }
+}
+    // end profession
+    // start professionabout
+.professionabout{
+    margin-bottom: 45px;
+    &__title{
+        margin-bottom: 30px;
+        line-height: 41px;
+        &-shadow{
+            font-size: 60px;
+            line-height: 80px;
+        }
+        .titleshadow{
+            top: 20%;
+        }
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.professionabout__item{
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 17px 3px rgba(0, 0, 0, 0.08);
+    max-width: 360px;
+    width: 100%;
+    padding: 0 35px;
+    &-suptitle{
+        font-size: 50px;
+        line-height: 50px;
+        @include f900;
+        color: $yellow;
+        margin-top: -20px;
+    }
+    &-title{
+        font-size: 16px;
+        line-height: 24px;
+        @include f700;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &-text{
+        font-size: 14px;
+        line-height: 24px;
+        @include f300;
+        margin-bottom: 35px;
+    }      
+}
+    // end professionabout
+    // start questions
+.questions{
+    padding: 80px 0 90px;
+    min-height: 774px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+    &__title{
+        margin-bottom: 40px;
+        &-shadow{
+            font-size: 553px;
+            line-height: 553px;
+        }
+        .titleshadow{
+            color: #fff;
+            z-index: 0;
+        }
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-box{
+            max-width: 433px;
+            width: 100%;
+        }
+    }
+}
+.questions__item{
+    margin-top: 26px;
+    position: relative;
+    height: 115px;
+    &::before{
+        content:"";
+        position: absolute;
+        background-image: url(../images/circlethinsmall.png);
+        width: 130px;
+        height: 130px;
+        top: -8px;
+        left: -9px;
+    }
+    &-number{
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        background-color: $green;
+        color:#fff;
+        font-size: 50px;
+        line-height: 50px;
+        @include f700;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &-text{
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        font-size: 20px;
+        line-height: 25px;
+        font-style: italic;
+    }
+}
+.questions__inner-box.rightbox{
+    .questions__item{
+        &::before{
+            top: -8px;
+            left: auto;
+            right: -7px;
+        }
+        &-number{
+            justify-content: flex-end;
+            left: auto;
+            right: 0;
+        }
+        &-text{
+            padding-right: 55px;
+        }
+    }
+}
+    // end questions
+    // start problems
+.problems{
+    margin-bottom: 60px;
+    &__title{
+        margin-bottom: 40px;
+        &-shadow{
+            font-size: 302px;
+            line-height: 302px;
+        }
+        .titleshadow{
+            top: -100%;
+        }
+    }
+    &__text{
+        text-align: center;
+        margin-bottom: 45px;
+        span{
+            @include f900;
+        }
+    }
+    &__items{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.problems__item{
+    max-width: 180px;
+    width: 100%;
+    text-align: center;
+    &-image{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 25px;
+        position: relative;
+        &::before,
+        &::after{
+            content:"";
+            position: absolute;
+            background-image: url(../images/circlethinsmall.png);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 130px;
+            height: 130px;
+        }
+        &::after{
+            background-image: url(../images/circleboldsmall.png);
+            width: 121px;
+            height: 121px;
+        }
+    }
+    &-text{
+        font-size: 13px;
+        line-height: 16px;
+        font-style: italic;
+    }
+}
+    // end problems
+    // start schoolbanner
+.schoolbanner{
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 6px 17px 3px rgba(0, 0, 0, 0.08);
+        padding: 40px 25px;
+    }
+}
+.schoolbanner__content{
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+    &-title,
+    &-subtitle{
+        font-size: 25px;
+        line-height: 30px;
+        @include f700;
+        text-transform: uppercase;
+        span{
+            color: $yellow;
+        }
+    }
+    &-subtitle{
+        text-transform: capitalize;
+        margin-bottom: 40px;
+    }
+    &-text{
+        font-size: 16px;
+        line-height: 30px;
+        span{
+            text-transform: uppercase;
+            @include f700;
+        }
+    }
+}
+.schoolbanner__image{
+    position: relative;
+    max-width: 485px;
+    width: 100%;
+    img{
+        position: absolute;
+        left: 0;
+        top: -105px;
+    }
+}
+    // end schoolbanner
+
+
 
 
 
