@@ -14,6 +14,14 @@ body{
     background-color: #f9f9f9;
     color: $text;
 }
+h1,
+h2,
+h3{
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
 ul,
 li{
     list-style: none;
