@@ -1263,9 +1263,12 @@ button.slick-arrow.slick-next{
     &__about{
         margin-bottom: 60px;
     }
-    // &__tariff{
-    //     overflow: auto;
-    // }
+    &__tariff-wrapper{
+        overflow: auto;
+    }
+    &__tariff{
+        min-width: 1075px;
+    }
 }
 
 .tariff__title{
@@ -1573,7 +1576,25 @@ button.slick-arrow.slick-next{
 
 }
     // end footer
-
+    // кнопка возврата вверх страницы
+.scrollup{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    font-size: 15px;
+    color: #000;
+    display:none;
+    text-indent: -9999px;
+    background-color: #fff;
+    background-image: url(../images/arrowright.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+}
 
 
 @import 'media';

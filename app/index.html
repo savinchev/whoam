@@ -27,11 +27,11 @@
                         <span></span>
                     </div>
                     <ul class="menu__list">
-                        <li><a href="#">О Проекте</a></li>
-                        <li><a href="#">Результаты Учеников</a></li>
-                        <li><a href="#">Для Кого</a></li>
-                        <li><a href="#">Как Устроен Курс</a></li>
-                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#school">О Проекте</a></li>
+                        <li><a href="#studentresults">Результаты Учеников</a></li>
+                        <li><a href="#forwhom">Для Кого</a></li>
+                        <li><a href="#courseabout">Как Устроен Курс</a></li>
+                        <li><a href="#price">Стоимость</a></li>
                     </ul>
                 </nav>
                 <div class="header__social">
@@ -44,7 +44,7 @@
         </div>
     </header>
 
-     <section class="course" style="background-image: url(images/coursebg.png);">
+    <section class="course" style="background-image: url(images/coursebg.png);">
         <div class="container">
             <div class="course__inner">
                 <div class="course__inner-title">
@@ -65,7 +65,7 @@
         </div>
     </section>
 
-    <section class="school">
+    <section id="school" class="school">
         <div class="school__title title">
             Мы единственная школа в России, которая:
             <div class="school__title-shadow titleshadow">
@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <section class="studentresults">
+    <section id="studentresults" class="studentresults">
         <div class="container">
             <div class="studentresults__inner">
                 <div class="studentresults__inner-title title">
@@ -174,7 +174,7 @@
         </div>
     </section>
 
-    <section class="forwhom">
+    <section id="forwhom" class="forwhom">
         <div class="forwhom__title title">
             Для кого?
             <div class="forwhom__title-shadow titleshadow">
@@ -747,7 +747,7 @@
         </div>
     </section>
 
-    <section class="courseabout">
+    <section id="courseabout" class="courseabout">
         <div class="container">
             <div class="courseabout__inner">
                 <div class="courseabout__inner-title">Как устроен курс?</div>
@@ -953,7 +953,7 @@
         </div>
     </section>
 
-    <!-- <section class="participation">
+    <section class="participation">
         <div class="container">
             <div class="participation__title title">
                 Варианты участия в проекте
@@ -999,150 +999,152 @@
                     Салоид.
                 </p>
             </div>
-            <div class="participation__tariff">
-                <div class="tariff__title">
-                    <div class="tariff__title-item">
+            <div id="price" class="participation__tariff-wrapper">
+                <div class="participation__tariff">
+                    <div class="tariff__title">
+                        <div class="tariff__title-item">
                             Базовый уровень:
                             “Призвание”
-                    </div>
-                    <div class="tariff__title-item">
-                            Продвинутый уровень: 
-                            “Кто Я”                            
-                    </div>
-                </div>
-                <div class="tariff__comparison">
-                    <div class="comparison__row">
-                        <div class="comparison__row-feature">
-                                Длительность:
                         </div>
-                        <div class="comparison__row-item">4 месяца</div>
-                        <div class="comparison__row-item">4 месяца</div>
+                        <div class="tariff__title-item">
+                            Продвинутый уровень:
+                            “Кто Я”
+                        </div>
                     </div>
-                    <div class="comparison__row">
-                        <div class="comparison__row-feature">
+                    <div class="tariff__comparison">
+                        <div class="comparison__row">
+                            <div class="comparison__row-feature">
+                                Длительность:
+                            </div>
+                            <div class="comparison__row-item">4 месяца</div>
+                            <div class="comparison__row-item">4 месяца</div>
+                        </div>
+                        <div class="comparison__row">
+                            <div class="comparison__row-feature">
                                 Количество личных консультаций с профориентологом про программе
                                 “Призвание”
+                            </div>
+                            <div class="comparison__row-item">5</div>
+                            <div class="comparison__row-item">5</div>
                         </div>
-                        <div class="comparison__row-item">5</div>
-                        <div class="comparison__row-item">5</div>
-                    </div>
-                    <div class="comparison__row">
-                        <div class="comparison__row-feature">
+                        <div class="comparison__row">
+                            <div class="comparison__row-feature">
                                 Количество личных консультаций с психологом по расширенной
                                 программе “Кто Я”
+                            </div>
+                            <div class="comparison__row-item">0</div>
+                            <div class="comparison__row-item">5</div>
                         </div>
-                        <div class="comparison__row-item">0</div>
-                        <div class="comparison__row-item">5</div>
-                    </div>
-                    <div class="comparison__row">
-                        <div class="comparison__row-feature">
+                        <div class="comparison__row">
+                            <div class="comparison__row-feature">
                                 5 теоретических модулей по программе “Призвание” (Резюме личности,
-                                Книга Личности, ПрофВыбор, Анализ профессий, Выбор профессии)                                
+                                Книга Личности, ПрофВыбор, Анализ профессий, Выбор профессии)
+                            </div>
+                            <div class="comparison__row-item">+</div>
+                            <div class="comparison__row-item">+</div>
                         </div>
-                        <div class="comparison__row-item">+</div>
-                        <div class="comparison__row-item">+</div>
-                    </div>
-                    <div class="comparison__row">
-                        <div class="comparison__row-feature">
-                                5 интервизий  (по каждому теоритическому блоку)
+                        <div class="comparison__row">
+                            <div class="comparison__row-feature">
+                                5 интервизий (по каждому теоритическому блоку)
+                            </div>
+                            <div class="comparison__row-item">+</div>
+                            <div class="comparison__row-item">+</div>
                         </div>
-                        <div class="comparison__row-item">+</div>
-                        <div class="comparison__row-item">+</div>
-                    </div>
-                    <div class="comparison__row">
-                        <div class="comparison__row-feature">
+                        <div class="comparison__row">
+                            <div class="comparison__row-feature">
                                 от 5 супервизий (количество супервизий зависит от количества
                                 участников в потоке)
+                            </div>
+                            <div class="comparison__row-item">+</div>
+                            <div class="comparison__row-item">+</div>
                         </div>
-                        <div class="comparison__row-item">+</div>
-                        <div class="comparison__row-item">+</div>
-                    </div>
-                    <div class="comparison__row">
-                        <div class="comparison__row-feature">
+                        <div class="comparison__row">
+                            <div class="comparison__row-feature">
                                 Дополнительные материалы по теме профорориентации
+                            </div>
+                            <div class="comparison__row-item">+</div>
+                            <div class="comparison__row-item">+</div>
                         </div>
-                        <div class="comparison__row-item">+</div>
-                        <div class="comparison__row-item">+</div>
-                    </div>
-                    <div class="comparison__row">
-                        <div class="comparison__row-feature">
-                            Предоставление тренировочных клиентов для отработки методологии
-                            (по желанию)
+                        <div class="comparison__row">
+                            <div class="comparison__row-feature">
+                                Предоставление тренировочных клиентов для отработки методологии
+                                (по желанию)
+                            </div>
+                            <div class="comparison__row-item">+</div>
+                            <div class="comparison__row-item">+</div>
                         </div>
-                        <div class="comparison__row-item">+</div>
-                        <div class="comparison__row-item">+</div>
                     </div>
-                </div>
-                <div class="tariff__price">
-                    <div class="tariff__price-item">
-                        <div class="price__box">
-                            <div class="price__box-title">С Куратором:</div>
-                            <div class="price__box-cost">49000 руб.</div>
-                            <div class="price__box-btn">
-                                <a href="#">оплатить</a>
+                    <div class="tariff__price">
+                        <div class="tariff__price-item">
+                            <div class="price__box">
+                                <div class="price__box-title">С Куратором:</div>
+                                <div class="price__box-cost">49000 руб.</div>
+                                <div class="price__box-btn">
+                                    <a href="#">оплатить</a>
+                                </div>
+                            </div>
+                            <div class="price__box">
+                                <div class="price__box-title">С Людмилой<br> Салоид</div>
+                                <div class="price__box-cost">83000 руб.</div>
+                                <div class="price__box-btn">
+                                    <a href="#">оплатить</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="price__box">
-                            <div class="price__box-title">С Людмилой<br> Салоид</div>
-                            <div class="price__box-cost">83000 руб.</div>
-                            <div class="price__box-btn">
-                                <a href="#">оплатить</a>
+                        <div class="tariff__price-item">
+                            <div class="price__box">
+                                <div class="price__box-title">С Куратором:</div>
+                                <div class="price__box-cost">59000 руб.</div>
+                                <div class="price__box-btn">
+                                    <a href="#">оплатить</a>
+                                </div>
+                            </div>
+                            <div class="price__box">
+                                <div class="price__box-title">С Людмилой<br> Салоид</div>
+                                <div class="price__box-cost">99000 руб.</div>
+                                <div class="price__box-btn">
+                                    <a href="#">оплатить</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tariff__price-item">
-                        <div class="price__box">
-                            <div class="price__box-title">С Куратором:</div>
-                            <div class="price__box-cost">59000 руб.</div>
-                            <div class="price__box-btn">
-                                <a href="#">оплатить</a>
-                            </div>
+                    <div class="tariff__offer">
+                        <div class="tariff__offer-item">
+                            <form>
+                                <input class="checkbox" type="checkbox" id="accept" required>
+                                <label for="accept">
+                                    Нажимая “оплатить” вы принимаете
+                                    <a href="#">договор оферты</a>
+                                </label>
+                            </form>
                         </div>
-                        <div class="price__box">
-                            <div class="price__box-title">С Людмилой<br> Салоид</div>
-                            <div class="price__box-cost">99000 руб.</div>
-                            <div class="price__box-btn">
-                                <a href="#">оплатить</a>
-                            </div>
+                        <div class="tariff__offer-item">
+                            <form>
+                                <input class="checkbox" type="checkbox" id="accept" required>
+                                <label for="accept">
+                                    Нажимая “оплатить” вы принимаете
+                                    <a href="#">договор оферты</a>
+                                </label>
+                            </form>
                         </div>
                     </div>
-                </div>
-                <div class="tariff__offer">
-                    <div class="tariff__offer-item">
-                        <form>
-                            <input class="checkbox" type="checkbox" id="accept" required>
-                            <label for="accept">
-                                Нажимая “оплатить” вы принимаете
-                                <a href="#">договор оферты</a>
-                            </label>
-                        </form>
-                    </div>
-                    <div class="tariff__offer-item">
-                        <form>
-                            <input class="checkbox" type="checkbox" id="accept" required>
-                            <label for="accept">
-                                Нажимая “оплатить” вы принимаете
-                                <a href="#">договор оферты</a>
-                            </label>
-                        </form>
-                    </div>
-                </div>
-                <div class="tariff__prepayment">
-                    <div class="tariff__prepayment-title">
-                        внести предоплату и забронировать место <span>5000 руб.</span>
-                    </div>
-                    <div class="tariff__prepayment-btn">
-                        <a href="#">забронировать</a>
-                    </div>
-                    <div class="tariff__prepayment-text">
-                        количество мест в каждом потоке у нас ограничено. От этого зависят интервизионные группы,
-                        поэтому вы можете забронировать место до старта обучения и доплатить перед обучением или во
-                        время обучения.
+                    <div class="tariff__prepayment">
+                        <div class="tariff__prepayment-title">
+                            внести предоплату и забронировать место <span>5000 руб.</span>
+                        </div>
+                        <div class="tariff__prepayment-btn">
+                            <a href="#">забронировать</a>
+                        </div>
+                        <div class="tariff__prepayment-text">
+                            количество мест в каждом потоке у нас ограничено. От этого зависят интервизионные группы,
+                            поэтому вы можете забронировать место до старта обучения и доплатить перед обучением или во
+                            время обучения.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section class="contacts">
         <div class="container">
@@ -1214,6 +1216,8 @@
             </div>
         </div>
     </footer>
+
+    <a href="#top" class="scrollup"></a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

@@ -34,7 +34,7 @@
                     left: 50%;
                     top: auto;
                     right: auto;
-                    transform: rotate(90deg);
+                    transform: rotate(90deg) translateY(10px);
                     background-image: url(../images/arrowright.png);
                     width: 17px;
                     height: 34px;
@@ -82,7 +82,7 @@
             text-align: center;
             a{
                 display: block;
-                padding: 10px 0;
+                padding: 15px 0;
                 &:hover{
                     &::after{
                         display: none;
@@ -139,11 +139,11 @@
             margin: 10px;
         }
     }
-    // .participation{
-    //     &__tariff{
-    //         overflow: hidden;
-    //     }
-    // }
+    .author{
+        .author__inner-info li::before{
+            background-color: $text;
+        }
+    }
 }
 @media(max-width: 1024px){
     .results{
@@ -313,6 +313,11 @@
             text-align: center;
         }
     }
+    .scrollup{
+        bottom: 30px;
+        right: 15px;
+
+    }
 }
 @media(max-width: 615px){
     .courseabout{
@@ -344,6 +349,7 @@
 }
 @media(max-width: 500px){
     .results{
+        padding-bottom: 120px;
         &__inner{
             padding-top: 5px;
             &-box{
@@ -498,7 +504,7 @@
         .courseabout__item.item-noimage{
             margin-bottom: 80px;
             &::after{
-                bottom: -25px;
+                bottom: -30px;
             }
         }
     }
